@@ -3,11 +3,11 @@ async function showUserDetails(){
     try{
         document.getElementById("showRelevantData").innerHTML=" ";
         let result=await fetch("https://randomuser.me/api/");
-         data=await result.json();
+        data=await result.json();
         
        
         console.log(data)
-        let display=await displayUserDetails();
+        displayUserDetails();
     }
     catch(err){
         console.log(err);
