@@ -1,7 +1,7 @@
 //your code here
 async function showUserDetails(){
     try{
-
+        document.getElementById("showRelevantData").innerHTML=" ";
         let result=await fetch("https://randomuser.me/api/");
          data=await result.json();
         
